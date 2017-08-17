@@ -8,7 +8,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
- <!--       <div class="sm-debug">
+        <div class="sm-debug">
             <div>
                 <div >
                     <div></div>
@@ -25,7 +25,7 @@
                     <div></div>
                 </div>
             </div>
-        </div> -->
+        </div> 
         <header class="page-header">
             <div class="container">
                 <nav class="header-menu">
@@ -33,10 +33,10 @@
                         <span>Menu</span>
                     </button>
                     <ul class="header-menu__list nav">
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">Home</a></li>
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">Portfolio</a></li>
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">About us</a></li>
-                        <li class="header-menu__item"><a href="#" class="header-menu__link">Contact</a></li>
+                        <li class="header-menu__item"><a href="/" class="header-menu__link">Home</a></li>
+                        <li class="header-menu__item"><a href="#" class="header-menu__link" data-scroll-target="#portfolio">Portfolio</a></li>
+                        <li class="header-menu__item"><a href="#" class="header-menu__link" data-scroll-target="#about">About us</a></li>
+                        <li class="header-menu__item"><a href="#" class="header-menu__link" data-scroll-target="#contacts">Contact</a></li>
                     </ul>
                 </nav>
                 <section class="header-content">
@@ -65,24 +65,28 @@
                         <ul class="service-list">
                             <li class="service-list__item">
                                 <div class="service-item">
+                                    <img src="img/management.svg" class="service-item__icon" alt="alt" />
                                     <h3 class="service-item__title">Management</h3>
                                     <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor</p>
                                 </div>
                             </li>
                             <li class="service-list__item">
                                 <div class="service-item">
+                                    <img src="img/ui.svg" class="service-item__icon" alt="alt" />
                                     <h3 class="service-item__title">UI / UX Design</h3>
                                     <p>Lorem ipsum dolor sitea amet, zixf consяяeit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,</p>
                                 </div>
                             </li>
                             <li class="service-list__item">
                                 <div class="service-item">
+                                    <img src="img/branding.svg" class="service-item__icon" alt="alt" />
                                     <h3 class="service-item__title">Logo / Branding</h3>
                                     <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioeew idolor sit amet,</p>
                                 </div>
                             </li>
                             <li class="service-list__item">
                                 <div class="service-item">
+                                    <img src="img/animation.svg" class="service-item__icon" alt="alt" />
                                     <h3 class="service-item__title">Animation</h3>
                                     <p>Lorem ipsum dolor sitea amet, zixf conseit  adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioeew idolor sit amet,</p>
                                 </div>
@@ -90,7 +94,7 @@
                         </ul>
                     </div>
                 </section>
-                <section class="portfolio">
+                <section class="portfolio" id="portfolio">
                     <div class="header--center">
                         <h2 class="portfolio__title">Feature portfolio</h2>
                         <p class="portfolio__subtitle">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.</p>
@@ -145,9 +149,47 @@
                         </ul>
                     </div>
                 </section>
-                <section class="team">
-                    <h2 class="team__title">Meet our team</h2>
-                    <p class="team__subtitle">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui/Ux , print template.</p>
+                <section class="team" id="about">
+                    <div class="team-header">
+                        <h2 class="team__title">Meet our team</h2>
+                        <p class="team__subtitle">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui/Ux , print template.</p>
+                    </div>
+                    <div class="team-content">
+                        <div class="wrap">
+                            <div class="team__img-block">
+                                <img src="img/girl.jpeg" alt=""/>
+                            </div>
+                            <div class="team__info-block">
+                                <div class="team-item__info">
+                                    <div class="member__name">Mark Waugh</div>
+                                    <p class="member__desc">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed dooing eiusmod tempor incididut labore Ui / Ux , print template.</p>
+                                    <ul class="member-contacts">
+                                        <li class="member-contacts__item"><a href="https://www.facebook.com/">Facebook</a></li>
+                                        <li class="member-contacts__item"><a href="https://dribbble.com/">Dribble</a></li>
+                                        <li class="member-contacts__item"><a href="https://www.behance.net/">Behance</a></li>
+                                        <li class="member-contacts__item"><a href="https://twitter.com">Twitter</a></li>
+                                    </ul>
+                                </div>
+                                <ul class="team-list">
+                                    <li class="team-list__item">
+                                        <div class="info">1</div>
+                                    </li>
+                                    <li class="team-list__item">
+
+                                        <div class="info">2</div>
+                                    </li>
+                                    <li class="team-list__item">
+
+                                        <div class="info">3</div>
+                                    </li>
+                                    <li class="team-list__item">
+
+                                        <div class="info">4</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
             <section class="subscription">
@@ -164,7 +206,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact" id="contacts">
                 <div class="container">
                     <h2 class="contact__title">Get in touch</h2>
                     <p class="contact__subtitle">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
@@ -184,9 +226,11 @@
             </div>
         </footer>
 
+        <script src="scripts/jquery-3.2.1.js"></script>
+        <script src="scripts/scripts.js"></script>
+
         <script type="text/javascript">
-           (function(){
-                            document.addEventListener("DOMContentLoaded", function () {
+            document.addEventListener("DOMContentLoaded", function () {
                 var btnMenu = document.querySelector('.header-menu__toggle');
                 if (btnMenu.addEventListener) {                    // For all major browsers, except IE 8 and earlier
                     btnMenu.addEventListener("click", openNav);
@@ -198,7 +242,6 @@
                     menu.classList.toggle('open');
                 }
             });
-            })();
 
 
         </script>
