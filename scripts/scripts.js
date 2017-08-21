@@ -1,5 +1,5 @@
-$(document).ready(function(){
-        $('*[data-scroll-target]').on('click', function (e) {
+$(document).ready(function () {
+    $('*[data-scroll-target]').on('click', function (e) {
         e.preventDefault();
 
         var target = $(this).data('scroll-target');
@@ -8,8 +8,15 @@ $(document).ready(function(){
         var go = $(target);
 
         if (go.length > 0) {
+            
+            $('nav.header-menu').removeClass('open');
             var top = go.offset().top + offset;
             $('html,body').animate({scrollTop: top}, rate);
         }
+    });
+    
+    $(window).on('scroll', function (e){
+        var top = $(this).scrollTop();
+        console.log(top);
     });
 });
