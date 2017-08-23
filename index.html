@@ -9,7 +9,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <!-- <div class="sm-debug">
+     <!--  <div class="sm-debug">
              <div>
                  <div >
                      <div></div>
@@ -43,7 +43,7 @@
                 <section class="header-content" id="header">
                     <div class="header-content__block">
                         <h1 class="header-content__title">Our strong organaisation</h1>
-                        <p class="header-content__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
+                        <p class="header-content__subtitle">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
                         <div><a href="#" class="btn">Contact Us</a></div>
                     </div>
                     <div class="header-content__block">
@@ -59,7 +59,7 @@
                 <section class="service">
                     <div class="service-block service-block__content">
                         <h2 class="service__title">Do you know we can provide for you ?</h2>
-                        <p class="service__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.</p>
+                        <p class="service__subtitle">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed doi eiusmod tempor incididunt ut labore et.</p>
                         <a href="#" class="btn btn--service">Contact Us</a>
                     </div>
                     <div class="service-block">
@@ -196,7 +196,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
                         </div>
                         <form class="form-subscribe">
-                            <input class="form-subscribe__input form-control" type="text" placeholder="Email Address..." />
+                            <input class="form-subscribe__input form-control" type="email" name="Email" placeholder="Email Address..." data-pattern = "email" />
                             <input class="form-subscribe__submit btn btn-lg" type="submit" value="Subscribe" />
                         </form>
                 </div>
@@ -209,9 +209,9 @@
                 <div class="contact-content">
                     <div class="container">
                         <form id="contactForm" class="contact-form" method="post">
-                            <input type="text" name="Name" class="form-control" placeholder="Name" />
-                            <input type="text" name="Email" class="form-control" placeholder="Your Mail" />
-                            <textarea name="Message" class="form-control" placeholder="Type your message"></textarea>
+                            <input type="text" name="Name" class="form-control" placeholder="Name" data-pattern="name" />
+                            <input type="text" name="Email" class="form-control" placeholder="Your Mail" data-pattern="email" />
+                            <textarea name="Message" class="form-control" placeholder="Type your message" data-pattern="tags"></textarea>
                             <input type="submit" class="btn" value="Send message" />
                         </form>
                         <div class="contact-info">
@@ -259,8 +259,7 @@
 
         <script src="scripts/jquery-3.2.1.js"></script>
         <script src="scripts/scripts.js"></script>
-
-        <script type="text/javascript">
+<!--     <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function () {
                 var btnMenu = document.querySelector('.header-menu__toggle');
                 if (btnMenu.addEventListener) {                    // For all major browsers, except IE 8 and earlier
@@ -279,7 +278,6 @@
                 });
             });
 
-
-        </script>
+        </script> -->
     </body>
 </html>
