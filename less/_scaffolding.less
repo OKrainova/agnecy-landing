@@ -364,17 +364,17 @@ a[href^="tel"]{
     background: #304352;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #d7d2cc, #304352); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     position: relative;
     z-index: 1;
+    overflow-y:hidden;
 
     &:after{
         content: '';
         position: absolute;
-        top:5px; //5px - радиус размытия
+        top:0;
         left:0;
         width:100%;
-        height: ~"calc(100% - 8px)";
+        height: 100%;
         background-image: url('../img/building.jpg');
         background-size: cover;
         z-index: -1;
@@ -384,8 +384,8 @@ a[href^="tel"]{
         -moz-filter: blur(5px);
         -o-filter: blur(5px);
         -ms-filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
-        filter: blur(5px);
         filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+        filter: blur(5px);
     }
 
     &__title{
