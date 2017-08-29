@@ -1,0 +1,50 @@
+.service{
+    .row-flex();
+    padding-bottom: 50px;
+
+    &-block{
+        .col();
+        .size(6);
+        .size-md(12);
+
+        &__content{
+            .size(5);
+            .offset-right(1);
+            margin-bottom:50px;
+            
+            .md-block({
+                margin-right: 0;
+            })
+        }
+    }
+
+    &__subtitle{
+        margin-bottom: 58px;
+    }
+
+    &-list{
+        &:extend(ul.nav);
+        .row-flex();
+        margin-top:10px;
+        margin-bottom:0;
+
+        &__item{
+            .col();
+            .size(6);
+            .size-sm(12);
+        }
+    }
+
+    &-item{
+        &__title{
+            text-transform: none;
+        }
+
+        &__icon{
+            margin-bottom: 30px;
+        }
+        & p{
+            margin-bottom: 50px;
+        }
+    }
+}

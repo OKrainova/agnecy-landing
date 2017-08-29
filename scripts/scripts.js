@@ -25,7 +25,7 @@ $(document).ready(function () {
 
         var target = $(this).data('scroll-target') || $(this).attr('href');
         var offset = $(this).data('scroll-offset') || 0;
-        var rate = $(this).data('scroll-rate') || 1000;
+        var rate = $(this).data('scroll-rate') || 800;
         var go = $(target);
 
         if (go.length > 0) {

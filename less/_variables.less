@@ -1,0 +1,72 @@
+@color-red: #ff3f40;
+/* Colors */
+@color-dark-grey: #312f30; //#313030;
+@color-light-grey: #f6f2f1;
+
+@color-grey: #e0e0e0;
+@color-black: #000000;
+@color-white: #ffffff;
+
+@section-background: #f5f0dd;
+@footer-text: #b8b8b8;
+@color-border-grey: #ececec;
+
+.border-red(){
+    width:132px;
+    height: 2px;
+    margin-top: 32px;
+    border: none; /* Убираем границу для браузера Firefox */
+    color: @color-red; /* Цвет линии для остальных браузеров */
+    background-color: @color-red;
+}
+
+.border-grey(){
+    content: '';
+    display: block;
+    border: none; /* Убираем границу для браузера Firefox */
+    color: @color-border-grey; /* Цвет линии для остальных браузеров */
+    background-color: @color-border-grey;
+    height: 2px;
+}
+
+.border-menu-grey(){
+    content: '';
+    display: block;
+    border: none; /* Убираем границу для браузера Firefox */
+    color: @color-border-grey; /* Цвет линии для остальных браузеров */
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(236,236,236,0), rgba(236,236,236,0.9), rgba(236,236,236,0));
+    background-image: -moz-linear-gradient(left, rgba(236,236,236,0), rgba(236,236,236,0.9), rgba(236,236,236,0));
+    background-image: -ms-linear-gradient(left, rgba(236,236,236,0), rgba(236,236,236,0.9), rgba(236,236,236,0));
+    background-image: -o-linear-gradient(left, rgba(236,236,236,0), rgba(236,236,236,0.9), rgba(236,236,236,0)); 
+    background-image: linear-gradient(to left, rgba(236,236,236,0), rgba(236,236,236,0.9), rgba(236,236,236,0));
+}
+
+.size-not-offset(@n){
+    @value: @atom * @n;
+    width: @value;
+}
+
+.size-custom-offset(@n, @offset_custom){
+    @value: @atom * @n;
+    width: ~"calc(@{value} - @{offset_custom})";
+}
+
+
+.crossbrows-opacity(@value){
+    @ie_value: @value * 100;
+    /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity= @{ie_value})";
+
+  /* IE 5-7 */
+  filter: alpha(opacity= @ie_value);
+
+  /* Netscape */
+  -moz-opacity: @value;
+
+  /* Safari 1.x */
+  -khtml-opacity: @value;
+
+  /* Good browsers */
+  opacity: @value;
+}
